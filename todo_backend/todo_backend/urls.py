@@ -19,7 +19,7 @@ from rest_framework import routers
 from task.views import TaskViewSet
 
 router = routers.DefaultRouter()
-router.register(r"task", TaskViewSet)
+router.register(r"tasks", TaskViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
